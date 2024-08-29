@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* regole condivise */
+.container,
+.estrazione,
+.tabellone,
+h1 {
+  margin-block: 3rem;
+}
+
+.estrazione,
+.tabellone {
+  display: inline-block;
+  margin: -3px;
+}
+
+.container {
+  width: 80vw;
+  margin-inline: auto;
+}
+h1 {
+  text-align: center;
+}
+
+.estrazione {
+  width: 20%;
+}
+
+.tabellone {
+  width: 80%;
+  padding-inline: 1rem;
+}
+
+button {
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.caselle {
+  margin-top: 5rem;
+}

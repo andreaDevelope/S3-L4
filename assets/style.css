@@ -55,7 +55,23 @@ li {
 }
 
 .caselle {
-  margin-top: 5rem;
+  margin-top: 2rem;
   width: 80vw;
-  margin-left: 20vw;
+  margin-left: 10vw;
+}
+
+.card {
+  display: inline-block;
+  margin-inline: -3px;
+  width: 38vw;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.numeri-card {
+  width: 16%;
+  margin-inline: -3px;
+  display: inline-block;
 }

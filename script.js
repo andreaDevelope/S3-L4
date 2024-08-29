@@ -3,6 +3,7 @@ const numEstratti = [];
 const divTabellone = [];
 const ol = document.createElement("ol");
 const button = document.querySelector("button");
+const divCaselle = document.querySelector(".caselle");
 
 // genero il tabellone
 const generaTabellone = () => {
@@ -21,6 +22,22 @@ const generaTabellone = () => {
 };
 generaTabellone();
 
+// genero casella
+const generoCasella = () => {
+  const caselle = document.createElement("div");
+  caselle.classList.add("card");
+  divCaselle.appendChild(caselle);
+
+  for (let i = 1; i < 25; i++) {
+    const numRnd = Math.ceil(Math.random() * 24);
+    let div = document.createElement("div");
+    div.className = "numeri-card";
+    div.innerText = numRnd; //ho il problema di avere 2 numeri uguali
+    caselle.appendChild(div);
+  }
+};
+
+generoCasella();
 // genero l' estrazione legata ad un bottone
 const estrazione = () => {
   const numeroEstratto = Math.ceil(Math.random() * 90);

@@ -11,10 +11,19 @@ h1 {
   margin-block: 3rem;
 }
 
+/* classi per js */
+.inline-block {
+  display: inline-block;
+  width: 10%;
+  margin-block: 1rem;
+  text-align: center;
+}
+
 .estrazione,
 .tabellone {
   display: inline-block;
   margin: -3px;
+  vertical-align: top;
 }
 
 .container {
@@ -37,7 +46,11 @@ h1 {
 button {
   display: block;
   margin-inline: auto;
-  margin-top: 1rem;
+  margin-block: 1rem;
+}
+
+li {
+  margin-block: 1rem;
 }
 
 .caselle {

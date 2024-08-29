@@ -36,6 +36,7 @@ h1 {
 
 .estrazione {
   width: 20%;
+  max-height: 50vh;
 }
 
 .tabellone {
@@ -55,4 +56,6 @@ li {
 
 .caselle {
   margin-top: 5rem;
+  width: 80vw;
+  margin-left: 20vw;
 }

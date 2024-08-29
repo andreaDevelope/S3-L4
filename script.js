@@ -1,7 +1,7 @@
 // creo le constanti globali
 const numEstratti = [];
 const divTabellone = [];
-const ul = document.createElement("ul");
+const ol = document.createElement("ol");
 const button = document.querySelector("button");
 
 // genero il tabellone
@@ -24,13 +24,20 @@ generaTabellone();
 // genero l' estrazione legata ad un bottone
 const estrazione = () => {
   const numeroEstratto = Math.ceil(Math.random() * 90);
+
+  for (let i = 0; i < numEstratti.length; i++) {
+    if (numEstratti[i] === numeroEstratto) {
+      console.log("numero già estratto");
+      return;
+    }
+  }
   const li = document.createElement("li");
   li.innerText = numeroEstratto;
   numEstratti.push(numeroEstratto);
 
   const div = document.querySelector(".estrazione");
-  div.appendChild(ul);
-  ul.appendChild(li);
+  div.appendChild(ol);
+  ol.appendChild(li);
   mettiLaBucciaDiArancia();
 };
 
